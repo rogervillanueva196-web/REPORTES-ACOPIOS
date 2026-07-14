@@ -801,7 +801,7 @@ function isCloudConfigured(){
 
 function configurarGoogleSheets(){
   const actual = getSheetsUrl();
-  const url = prompt('Pega aquí la URL de tu Apps Script (termina en /exec):\n(Deja vacío para restablecer la URL por defecto)', actual === GOOGLE_SHEETS_WEBAPP_URL ? '' : actual);
+  const url = prompt('https://script.google.com/macros/s/AKfycbykdG5begj33isBbZJtubnS7IHjqVI8aN_kXxOCS3ZLkiNmGPw4jpH_oRwj3CvriiPjWg/exec):\n(Deja vacío para restablecer la URL por defecto)', actual === GOOGLE_SHEETS_WEBAPP_URL ? '' : actual);
   if(url === null) return;
   const limpio = url.trim();
   if(!limpio){
